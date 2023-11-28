@@ -1,10 +1,13 @@
 # flutterquiz
 
 Um novo projeto em flutter simulando um quiz.
+
 OBS: como não é possivel enviar todas as pastas por serem muiuto grande, decidi colocar um link do driver para baixar as pastas restantes. Apos baixar as pastas, basta apenas arrastar para ficar junto das outras pastas.
 É nescessario baixar extenções no vscode como flutter e dart, mas o proprio vscode já faz isso automaticamente.
 
 ## Driver dos Arquivos para Download
+
+Auguns vão aparecer como "mão é possivel visualisar" mas não é um problema.
 
 - [Clique aqui para baixar o arquivo](https://drive.google.com/file/d/1FkIMklW7b_OQcUm4fJecKrWfx0obSNae/view)
   
