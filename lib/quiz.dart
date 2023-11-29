@@ -4,7 +4,7 @@ import './resposta.dart';
 import './pergunta.dart';
 
 class Quiz extends StatelessWidget {
-  final List<Map<String, Object>> questions;
+  final List<Map<String, dynamic>> questions;
   final int questionIndex;
   final Function answerQuestion;
 
@@ -20,17 +20,16 @@ class Quiz extends StatelessWidget {
     return Column(
       children: [
         Question(
-          questions[questionIndex]['questionText'].toString(),
+          questions[questionIndex]['questionText'] as String,
         ),
-        SizedBox(height: 16), // Defina a altura desejada entre as alternativas
-        ...(questions[questionIndex]['answers'] as List<Map<String, Object>>)
+        SizedBox(height: 16),
+        ...(questions[questionIndex]['answers'] as List<Map<String, dynamic>>)
             .map((answer) {
           return Padding(
-            padding: EdgeInsets.symmetric(
-                vertical: 8), // Defina o espaçamento vertical desejado
+            padding: EdgeInsets.symmetric(vertical: 8),
             child: Answer(
               () => answerQuestion(answer['score'] as int),
-              answer['text'].toString(),
+              answer['text'] as String,
             ),
           );
         }).toList(),
