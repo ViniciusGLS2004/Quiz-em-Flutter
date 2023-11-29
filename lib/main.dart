@@ -128,7 +128,7 @@ class QuizScreenState extends State<QuizScreen> {
     return Column(
       children: [
         Text(
-          widget.questions[widget.questionIndex]['questionText'],
+          widget.questions[widget.questionIndex]['questionText'] as String,
         ),
         ...(widget.questions[widget.questionIndex]['answers']
                 as List<Map<String, Object>>)
