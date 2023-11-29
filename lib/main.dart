@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './quiz.dart';
 import './resultado.dart';
+import 'tela_inicial.dart';
 
 void main() => runApp(const MyApp());
 
@@ -103,5 +104,41 @@ class _MyAppState extends State<MyApp> {
       ), //Scaffold
       debugShowCheckedModeBanner: false,
     ); //MaterialApp
+  }
+}
+
+class QuizScreen extends StatefulWidget {
+  final List<Map<String, Object>> questions;
+  final int questionIndex;
+  final Function answerQuestion;
+
+  QuizScreen({
+    required this.questions,
+    required this.questionIndex,
+    required this.answerQuestion,
+  });
+
+  @override
+  State<QuizScreen> createState() => QuizScreenState();
+}
+
+class QuizScreenState extends State<QuizScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          widget.questions[widget.questionIndex]['questionText'],
+        ),
+        ...(widget.questions[widget.questionIndex]['answers']
+                as List<Map<String, Object>>)
+            .map((answer) {
+          return ElevatedButton(
+            onPressed: () => widget.answerQuestion(answer['score'] as int),
+            child: Text(answer['text'] as String),
+          );
+        }).toList(),
+      ],
+    );
   }
 }
