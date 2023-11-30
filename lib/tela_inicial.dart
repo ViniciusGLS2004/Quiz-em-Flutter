@@ -28,6 +28,26 @@ class TelaInicial extends StatelessWidget {
           ],
         ),
       ),
+      drawer: Drawer(
+        // adcionando o Drawer
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.green,
+              ),
+              child: Text(
+                'Menu',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
