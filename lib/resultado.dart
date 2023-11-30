@@ -9,15 +9,15 @@ class Result extends StatelessWidget {
 
   String get resultPhrase {
     String resultText;
-    if (resultScore >= 40) {
+    if (resultScore >= 100) {
       resultText = 'Nota perfeita!';
       print(resultScore);
-    } else if (resultScore >= 30) {
+    } else if (resultScore >= 70) {
       resultText = 'Você está acima da media!';
       print(resultScore);
-    } else if (resultScore >= 20) {
+    } else if (resultScore >= 50) {
       resultText = 'Você está na media!';
-    } else if (resultScore >= 1) {
+    } else if (resultScore >= 10) {
       resultText = 'Você está abaixo da media!';
     } else {
       resultText = 'Estude mais!';
