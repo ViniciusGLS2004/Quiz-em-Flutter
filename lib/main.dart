@@ -53,6 +53,60 @@ class _MyAppState extends State<MyApp> {
         {'text': 'Jeremy Ashkenas', 'score': 0},
       ],
     },
+    {
+      'questionText': 'Q5. O que é um widget no Flutter?',
+      'answers': [
+        {'text': 'Uma função assíncrona', 'score': 0},
+        {'text': 'Um componente visual reutilizável', 'score': 10},
+        {'text': 'Uma biblioteca para teste de unidade', 'score': 0},
+        {'text': 'Uma classe para gerenciamento de banco de dados', 'score': 0},
+      ],
+    },
+    {
+      'questionText': 'Q6. Quais são algumas das vantagens de usar o Flutter para o desenvolvimento de aplicativos móveis?',
+      'answers': [
+        {'text': 'Desenvolvimento rápido de interfaces de usuário', 'score': 10},
+        {'text': 'Criação de aplicativos multiplataforma', 'score': 0},
+        {'text': 'Hot reload para atualizações instantâneas', 'score': 0},
+        {'text': 'Todas as opções acima', 'score': 0},
+      ],
+    },
+    {
+      'questionText': 'Q7. Qual widget é usado para criar um botão em Flutter?',
+      'answers': [
+        {'text': 'Text', 'score': 0},
+        {'text': 'Container', 'score': 0},
+        {'text': 'ElevatedButton', 'score': 10},
+        {'text': 'Column', 'score': 0},
+      ],
+    },
+    {
+      'questionText': 'Q8. O que é um Stateful Widget em Flutter?',
+      'answers': [
+        {'text': 'Um widget que não pode ser atualizado', 'score': 0},
+        {'text': 'Um widget que pode ser atualizado com base em alterações de estado', 'score': 10},
+        {'text': 'Um widget usado apenas para exibição de texto', 'score': 0},
+        {'text': 'Um widget usado para criar layouts complexos', 'score': 0},
+      ],
+    },
+    {
+      'questionText': 'Q9. Qual é a função principal do widget MaterialApp em Flutter?',
+      'answers': [
+        {'text': 'Configurar o tema do aplicativo e definir as rotas', 'score': 10},
+        {'text': 'Exibir um texto na tela', 'score': 0},
+        {'text': 'Criar um botão interativo', 'score': 0},
+        {'text': 'Estruturar o layout do aplicativo', 'score': 0},
+      ],
+    },
+      {
+      'questionText': 'Q10. Qual é a função do widget StatefulWidget em Flutter?',
+      'answers': [
+        {'text': 'Exibir texto na tela', 'score': 0},
+        {'text': 'Criar um layout flexível', 'score': 0},
+        {'text': 'Definir temas personalizados', 'score': 0},
+        {'text': 'Permitir que um widget tenha um estado mutável', 'score': 10},
+      ],
+    },
   ];
 
   var _questionIndex = 0;
