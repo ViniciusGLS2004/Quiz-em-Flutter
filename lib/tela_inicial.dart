@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './main.dart';
 
+/// Widget para a tela inicial do aplicativo.
 class TelaInicial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,8 +21,8 @@ class TelaInicial extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context,
-                    '/main'); // Use pushReplacementNamed em vez de pushNamed para substituir a tela inicial
+                // Use pushReplacementNamed em vez de pushNamed para substituir a tela inicial
+                Navigator.pushReplacementNamed(context, '/main');
               },
               child: Text('Iniciar Quiz'),
             ),
@@ -29,7 +30,7 @@ class TelaInicial extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        // adcionando o Drawer
+        // Adicionando o Drawer
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
@@ -52,11 +53,13 @@ class TelaInicial extends StatelessWidget {
   }
 }
 
+/// Widget para a tela do quiz.
 class TelaQuiz extends StatefulWidget {
   @override
   QuizScreenState createState() => QuizScreenState();
 }
 
+/// Widget principal do aplicativo.
 class QuizApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
