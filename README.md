@@ -2,7 +2,7 @@
 
 Um novo projeto em flutter simulando um quiz.
 
-OBS: como não é possivel enviar todas as pastas por serem muiuto grande, decidi colocar um link do driver para baixar as pastas restantes. Apos baixar as pastas, basta apenas arrastar para ficar junto das outras pastas.
+OBS:
 É nescessario baixar extenções no vscode como flutter e dart, mas o proprio vscode já faz isso automaticamente.
 
 Caso apareça diversos erros no import, apenas execute um debug.
