@@ -13,6 +13,9 @@ class TelaInicial extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Image.asset(
+              'assets/images/01_Lillia-Splash-Base.jpg',
+            ),
             SizedBox(height: 20),
             Text(
               'Bem Vindo ao Quiz',
