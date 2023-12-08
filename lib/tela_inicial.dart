@@ -14,7 +14,7 @@ class TelaInicial extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/01_Lillia-Splash-Base.jpg',
+              'assets/images/flutter.jpg',
             ),
             SizedBox(height: 20),
             Text(
